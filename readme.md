@@ -106,7 +106,7 @@ assert get_afinn_score('This is utterly excellent!') == 3.0
 ## NER
 
 A common task is to tag entities in text, TexTor wraps Named Entity 
-Recognition functionality from several libs
+Recognition functionality from several libs (not installed by default)
 
 nltk is used by default, other options are Fox, Polyglot and Spacy
 
@@ -122,6 +122,9 @@ assert NER("The Taj Mahal was built by Emperor Shah Jahan") == \
              'tokens': ['Emperor', 'Shah', 'Jahan']}]
              
 ```
+
+I suggest you also check [EpiTator](https://github.com/ecohealthalliance/EpiTator)
+
 
 ## Segmentation
 
@@ -202,6 +205,8 @@ from TexTor.remote.allennlp import textual_entailment, documentqa, event2mind, i
 ## Word2Vec
 
 Word2Vec functionality is also provided, basically a small wrapper around gensim.Word2Vec
+
+you need to install gensim for this, it is not installed by default
 
 ```python
 from TexTor.understand.word_vectors import WordTwoVec

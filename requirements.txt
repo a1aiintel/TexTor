@@ -7,4 +7,3 @@ syntok
 # version with emoticons
 git+https://github.com/angstwad/afinn
 pattern
-gensim
